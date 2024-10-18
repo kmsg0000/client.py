@@ -112,3 +112,16 @@ def _str_to_bool_or_cert(value: bool | str) -> bool | str:
 
     msg = f'Cannot convert "{value}" to a bool or certificate path'
     raise ValueError(msg)
+
+SUPPORTED_MODELS = {
+    "FARADAY_PRO_A_W_CN": {
+        "device_name": "DEEBOT T50 PRO",
+        "model": "FARADAY_PRO_A_W_CN",
+        "icon": "https://portal.ecouser.net/api/pim/file/get/66e2b3ef17ebd02147fa830b",
+        "service": {
+            "jmq": "jmq-ngiot-cn.dc.cn.ecouser.net",
+            "mqs": "api-ngiot.dc-cn.cn.ecouser.net"
+        },
+        "ota": True
+    }
+}
